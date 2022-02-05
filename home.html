@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home rental kendaraan</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		body {
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/home3.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		.navbar {
+			width: 100%;
+			height: 20px;
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+			background-color: black;
+			padding-top: 60px;
+			font-family: tahoma;
+			font-size: 20px;
+			padding-bottom: 30px;
+			margin-top: -30px;
+		}
+		.logo {
+			width: 80px;
+			cursor: pointer;
+			margin: 30px 0;
+			float: left;
+		}
+		label  {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 25px;
+			color: white;
+			margin: 10px;
+			float: left;
+			padding: 5px;
+		}
+		nav {
+			flex: 1;
+			text-align: right;
+		}
+		nav ul {
+			margin: 0px;
+			padding: 5px;
+			background: none;
+			display: block;
+			float: right;
+		}
+		nav ul li {
+			list-style: none;
+			display: inline-block;
+		}
+		nav ul li a {
+			display: block;
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+			font-size: 20px;
+		}
+		nav ul li a:hover {
+			color: lightgrey;
+		}
+		.row {
+			display: flex;
+			height: 88%;
+			align-items: center;
+			padding-left: 8%;
+		}
+		.row2 {
+			flex-basis: 50%;
+		}
+		h2 {
+			color: white;
+			font-size: 50px;
+		}
+		p {
+			width: 700px;
+			color: white;
+			font-size: 15px;
+			line-height: 15px;
+		}
+		button {
+			width: 150px;
+			color: black;
+			font-size: 13px;
+			font-weight: bold;
+			padding: 12px 0;
+			background: white;
+			border: 0;
+			border-radius: 15px;
+			outline: none;
+			margin-top: 30px;
+		}
+		.image {
+			width: 250px;
+			height: 150px;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 15px 25px;
+			box-sizing: border-box;
+			cursor: pointer;
+			margin: 10px 15px;		
+			background-position: center;
+			background-size: cover;
+			transition: transform 0.5s;
+		}
+		.image1{
+			background-image: url(image/daihatsu.jpeg);
+		}
+		.image2{
+			background-image: url(image/toyota.jpeg);
+		}
+		.image:hover {
+			transform: translateY(-10px);
+		}
+		h5 {
+			color: black;
+			text-shadow: 0 0 5px #999;
+		}
+		.img {
+			width: 250px;
+			height: 150px;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 15px 25px;
+			box-sizing: border-box;
+			cursor: pointer;
+			margin: 10px 15px;		
+			background-position: center;
+			background-size: cover;
+			transition: transform 0.5s;
+		}
+		.image3{
+			background-image: url(image/suzuki1.jpeg);
+		}
+		.image4{
+			background-image: url(image/honda.jpeg);
+		}
+		.img:hover {
+			transform: translateY(-10px);
+		}
+		footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			width: 100%;
+			background-color: black;
+			font-weight: bold;
+			font-family: 'Courier New', Courier, monospace;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<img src="image/LOGO.png" class="logo">
+		<label>FOUR Rentcar</label>
+		<nav>
+			<ul>
+				<li><a href="">Beranda</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+				<li><a href="daftarmobil.php">Daftar Mobil</a></li>
+				<li><a href="syaratketentuan.html">Syarat & Ketentuan</a></li>
+				<li><a href="hubungi.php">Hubungi</a></li>	
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="row">
+		<div class="row2">
+			<h2>FOUR Rentcar</h2>
+			<p>Tempat sewa mobil termurah dan terpercaya kredibilitasnya melayani tamu untuk berbagai perjalanan. Didukung dengan armada kami yang lengkap dan juga kondisi mobil yang selalu terawat setiap hari. Bisa anda pilih mobil yang sesuai dengan kebutuhan anda dan waktu yang sudah ditentukan. Kami akan selalu melayani anda 24 jam setiap harinya.</p>
+			<a href="daftarmobil.php"><button type="button">Sewa sekarang</button></a>
+		</div>
+		<div class="row2">
+			<div class="image image1">
+				<h5>Daihatsu</h5>
+			</div>
+			<div class="image image2">
+				<h5>Toyota</h5>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="img image3">
+				<h5>Suzuki</h5>
+			</div>
+			<div class="img image4">
+				<h5>Honda</h5>
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy; Copyright 2021 by TIM FOUR SMK WIKRAMA BOGOR
+	</footer>
+	<script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+</body>
+</html>
